@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>For Noor</title>
+<title>For Nooor</title>
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌙</text></svg>">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
 <style>
@@ -151,7 +151,7 @@
 </head>
 <body>
 
-<button class="sound-toggle" id="soundToggle" aria-label="Toggle sound">🔈</button>
+<button class="sound-toggle" id="soundToggle" aria-label="Toggle sound">🔊</button>
 
 <section class="screen" id="intro">
   <div class="glyph">🌙</div>
@@ -180,9 +180,9 @@
 <section class="screen hidden" id="final">
   <canvas id="confetti"></canvas>
   <div class="card">
-    <h2 class="serif">Happy Birthday, Noor</h2>
-    <p class="wish">May your days taste like the sweetest dates in Ramadan, your laughter echo louder than any call to prayer, and may Allah gift you surprises that make you forget why you were ever worried. You deserve a life written in verses, not footnotes — here's to your most beautiful chapter yet.</p>
-    <p class="footer">I'm here, in any need,I want your kids to get to me whenever they need urgent, emergency support, cuz Mahtab does the things without thinking of ethics, "Kaarne kaa matlaab karneka, ethics jaye vaad mei", I am just a click away, always. I promised, I will never leave your hand!!</p>
+    <h2 class="serif">Happy Birthday, Noooooorrrr</h2>
+    <p class="wish">May your days taste like the sweetest dates in Ramadan, your heart as light as the night of Laylatul Qadr, and may Allah fill your life with gifts and surprises that make you forget why you were ever worried. You deserve a life written in verses, not tears — here's to your most beautiful chapter yet.</p>
+    <p class="footer">Wherever life takes you, know this: I'm only a message away. If something urgent ever comes up and you need someone to act without hesitation, I'll be there - first, and without any question. I promised I'd never let go of your hand, and I meant it.</p>
     <div class="actions">
       <button class="ghost-btn" id="replayBtn">Replay the wishes</button>
     </div>
@@ -194,7 +194,7 @@
   "use strict";
 
   // ---- Sound (synthesized, no external files) ----
-  let audioCtx = null, soundOn = false;
+  let audioCtx = null, soundOn = true;
   function ensureCtx(){ if(!audioCtx){ try{ audioCtx = new (window.AudioContext||window.webkitAudioContext)(); }catch(e){} } }
   function chime(freqs, dur){
     if(!soundOn || !audioCtx) return;
@@ -231,10 +231,10 @@
     show('message');
     typeMessage();
   });
-const fullMessage = `I really admire you.
+const fullMessage = `I really admire you, the Nooor of you, the Nooor you!
 Sadness should never touch you, Allah is your creator, He knows the best plan and strategy for you!
 Have patience and have Tawaqqul on Him alone! —
-I just want you to be happy, whatever it takes, I will do my best, in halal way, In sha Allah.
+I just want you to be happy, no regret, no complaints, In sha Allah.
 
 Better things are coming to your life.
 May you shine and smile every moment of it.
@@ -242,7 +242,9 @@ I just want to watch you happy and jolly, no sadness.
 
 Don't be sad, don't be weak —
 I have seen the strongest personality in you.
+
                       (aare niche scroll koren, aro ache tooo!!)
+                      
 I know you'll shine and be happy,
 beyond your own dreams and expectations!`;
 
